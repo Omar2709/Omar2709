@@ -20,7 +20,7 @@ de diseño para construir aplicaciones seguras, mantenibles y de alto rendimient
 - 📡 Experiencia con WebSockets y Django Channels.
 - 🐳 Uso de Docker, Linux, Git y GitHub.
 - ☁️ Conocimientos en AWS y Google Cloud Platform.
-- 🎓 Estudiante de Ingeniería de Sistemas en la Universidad de La Guajira.
+- 🎓 Estudiante Egresado de Ingeniería de Sistemas en la Universidad de La Guajira.
 - 📍 Colombia.
 
 ---
