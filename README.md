@@ -4,7 +4,7 @@
 
 ### Backend Engineer | Python • FastAPI • Django • AWS Serverless
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=21&pause=1000&color=2F81F7&center=true&vCenter=true&width=800&lines=Backend+Engineer+%7C+Python+%26+FastAPI;Django+REST+Framework+%7C+PostgreSQL;Distributed+Systems+%7C+APIs+%26+Integrations;AWS+Serverless+%7C+Docker+%7C+CI%2FCD;Go+%7C+Concurrency+%7C+Backend+Systems" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=21&pause=1000&color=2F81F7&center=true&vCenter=true&width=850&lines=Backend+Engineer+%7C+Python+%26+FastAPI;Django+REST+Framework+%7C+PostgreSQL;APIs+%7C+Integrations+%7C+Distributed+Systems;AWS+Serverless+%7C+Docker+%7C+CI%2FCD;Go+%7C+Domain+Modeling+%7C+Concurrency" alt="Typing SVG" />
 
 <br>
 
@@ -21,21 +21,21 @@
 
 ## 👨‍💻 Sobre mí
 
-Soy **Backend Engineer especializado en Python**, con experiencia construyendo APIs y servicios orientados a producción con **Django, Django REST Framework y FastAPI**.
+Soy **Backend Engineer especializado en Python**, con experiencia desarrollando APIs y servicios orientados a producción con **Django, Django REST Framework y FastAPI**.
 
-Me enfoco en diseñar sistemas **seguros, mantenibles, observables y escalables**, prestando atención no sólo al endpoint, sino también a contratos, persistencia, seguridad, idempotencia, procesamiento asíncrono, integración con terceros y operación en cloud.
+Me enfoco en construir sistemas **seguros, mantenibles, observables y escalables**, prestando atención no sólo a los endpoints, sino también a contratos, persistencia, autenticación, autorización, idempotencia, procesamiento asíncrono, integración con terceros, testing y operación en cloud.
 
 * 🐍 Backend con **Python, Django, Django REST Framework y FastAPI**.
-* ⚙️ Diseño de **APIs, integraciones y servicios distribuidos**.
-* 🔐 Autenticación y autorización con **JWT, OAuth2, API Keys y scopes**.
+* ⚙️ Diseño de **APIs REST, integraciones y servicios backend**.
+* 🔐 Autenticación y autorización con **JWT, OAuth2, API Keys, scopes y permisos por roles**.
 * 🗄️ Persistencia con **PostgreSQL, MySQL, SQL Server, Firebase y Redis**.
-* ⚡ Procesamiento asíncrono con **Celery, Redis, SQS y patrones de mensajería**.
+* ⚡ Procesamiento asíncrono con **Celery, Celery Beat, Redis y Amazon SQS**.
 * ☁️ Desarrollo serverless con **AWS Lambda, API Gateway, CloudWatch, IAM y AWS SAM**.
-* 🧩 Experiencia aplicando **idempotencia, Transactional Outbox, retries y backoff**.
+* 🧩 Aplicación de patrones como **idempotencia, Transactional Outbox, retries y exponential backoff**.
 * 📡 Comunicación en tiempo real con **WebSockets y Django Channels**.
-* 🐳 Contenerización y despliegue con **Docker, Linux, Nginx, Gunicorn y Uvicorn**.
-* 🧪 Testing con **pytest**, integración continua y control de calidad con **Ruff**.
-* 🦫 Actualmente desarrollando también con **Go**, con foco en dominio y concurrencia.
+* 🐳 Contenerización y despliegue con **Docker, Docker Compose, Linux, Nginx, Gunicorn y Uvicorn**.
+* 🧪 Testing con **pytest**, integración continua y control de calidad con **Ruff y GitHub Actions**.
+* 🦫 Actualmente desarrollo también con **Go**, con foco en modelado de dominio, concurrencia y sistemas backend.
 * 🎓 Ingeniero de Sistemas — **Universidad de La Guajira**.
 * 📍 Colombia 🇨🇴
 
@@ -48,7 +48,7 @@ Me enfoco en diseñar sistemas **seguros, mantenibles, observables y escalables*
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Django_REST-A30000?style=for-the-badge&logo=django&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Django_REST_Framework-A30000?style=for-the-badge&logo=django&logoColor=white"/>
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
   <img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white"/>
   <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"/>
@@ -93,79 +93,198 @@ Me enfoco en diseñar sistemas **seguros, mantenibles, observables y escalables*
 
 ---
 
-## 🚀 Proyectos destacados
+# 🚀 Proyectos destacados
 
-### ☁️ [OrderFlow Serverless](https://github.com/Omar2709/orderflow-serverless)
+## 👥 [TeamFlow API](https://github.com/Omar2709/teamflow-api)
+
+API REST para gestión colaborativa de **equipos, proyectos y tareas**, construida con **Django, Django REST Framework y PostgreSQL**, con una arquitectura orientada a producción.
+
+```text
+Client
+  │
+  ▼
+Gunicorn
+  │
+  ▼
+Django REST Framework
+  │
+  ├──────────────► PostgreSQL
+  │
+  └──────────────► Redis
+                    Cache / throttling
+
+Celery Beat
+  │
+  ▼
+Redis
+Celery Broker
+  │
+  ▼
+Celery Worker
+  │
+  ▼
+Notification Services
+  │
+  ▼
+PostgreSQL
+```
+
+### Capacidades principales
+
+* JWT authentication con access y refresh tokens.
+* Refresh token rotation y blacklist.
+* Autorización basada en roles:
+
+  * `Owner`
+  * `Admin`
+  * `Member`
+* Aislamiento de recursos entre equipos.
+* Gestión de equipos, miembros, proyectos, tareas y comentarios.
+* Dashboards con métricas agregadas y personales.
+* Sistema privado de notificaciones.
+* PostgreSQL con constraints, índices, annotations y aggregations.
+* Redis como cache backend y broker de Celery.
+* Celery + Celery Beat para procesamiento asíncrono y periódico.
+* Servicios idempotentes para prevenir notificaciones duplicadas.
+* Retries con exponential backoff para fallos transitorios.
+* OpenAPI 3 con Swagger UI y ReDoc.
+* Docker + Docker Compose.
+* Gunicorn.
+* Health y readiness endpoints.
+* GitHub Actions para integración continua.
+* Tests de regresión contra problemas N+1.
+* **225 tests automatizados** cubriendo autenticación, autorización, API, Celery, OpenAPI, persistencia y rendimiento ORM.
+
+---
+
+## ☁️ [OrderFlow Serverless](https://github.com/Omar2709/orderflow-serverless)
 
 API serverless de procesamiento de órdenes construida con **Python 3.13 y AWS**.
 
 ```text
 Client
-  ↓
+  │
+  ▼
 API Gateway HTTP API
-  ↓
+  │
+  ▼
 AWS Lambda
-  ↓
-Application / Domain
+  │
+  ▼
+Application Layer
+  │
+  ▼
+Domain Layer
 
-Lambda ─────────→ CloudWatch Logs
+Lambda ───────────────► CloudWatch Logs
         observability
 ```
 
-**Implementado actualmente:**
+### Capacidades actuales
 
-* AWS Lambda + API Gateway HTTP API.
+* AWS Lambda.
+* API Gateway HTTP API.
 * AWS SAM / CloudFormation.
-* Validación de contratos con Pydantic.
-* IAM con principio de least privilege.
+* Boundary validation con Pydantic.
+* Separación entre handler, application y domain.
+* IAM con principio de **least privilege**.
 * Structured logging con AWS Lambda Powertools.
-* Correlation IDs y observabilidad en CloudWatch.
-* pytest, coverage, Ruff y ADRs de arquitectura.
+* Correlation IDs.
+* Observabilidad mediante CloudWatch.
+* Manejo seguro de excepciones internas.
+* pytest + coverage.
+* Ruff.
+* Architecture Decision Records.
 
-> El proyecto evoluciona progresivamente hacia persistencia y procesamiento distribuido.
+El proyecto evoluciona progresivamente hacia persistencia y procesamiento distribuido.
 
 ---
 
-### ⚡ [FastAPI REST API](https://github.com/Omar2709/fastapi-rest-api)
+## ⚡ [FastAPI REST API](https://github.com/Omar2709/fastapi-rest-api)
 
-Backend orientado a producción con **FastAPI + PostgreSQL**, utilizado para profundizar en diseño de APIs y sistemas asíncronos.
+Backend orientado a producción construido con **FastAPI + PostgreSQL**, enfocado en seguridad de APIs, procesamiento asíncrono e integración con mensajería.
 
-**Incluye:**
+### Capacidades destacadas
 
-* API Keys, scopes y autorización granular.
-* PostgreSQL + SQLAlchemy + Alembic.
-* Idempotency Keys con protección ante concurrencia.
+* PostgreSQL + SQLAlchemy.
+* Alembic migrations.
+* API Keys.
+* HMAC para verificación de credenciales.
+* Scopes y autorización granular.
+* Protección contra escalamiento de privilegios.
+* Idempotency Keys.
+* Fingerprints SHA-256 sobre requests normalizados.
+* Namespace idempotente por propietario.
+* Protección ante requests concurrentes.
 * Transactional Outbox.
-* AWS SQS adapter.
-* Retry, exponential backoff y manejo de poison events.
-* `FOR UPDATE SKIP LOCKED` para publishers concurrentes.
-* pytest, branch coverage y GitHub Actions.
+* Message Envelope versionado.
+* Amazon SQS adapter.
+* `FOR UPDATE SKIP LOCKED`.
+* Publishers concurrentes.
+* Exponential backoff.
+* Retry controlado.
+* Clasificación de errores retryable y permanent.
+* Poison event isolation.
+* pytest.
+* Coverage de líneas y branches.
+* GitHub Actions.
+
+Este proyecto profundiza especialmente en problemas de **consistencia, concurrencia, retries e idempotencia** en sistemas distribuidos.
 
 ---
 
-### 🔌 [Python Integration Service](https://github.com/Omar2709/python-integration-service)
+## 🔌 [Python Integration Service](https://github.com/Omar2709/python-integration-service)
 
-Servicio backend con **Python y FastAPI** enfocado en integraciones con APIs de terceros y patrones de integración mantenibles.
+Servicio backend construido con **Python y FastAPI** para practicar y demostrar patrones de integración con APIs de terceros.
 
-El proyecto explora separación de responsabilidades, abstracciones de transporte, diseño testeable y manejo explícito de fallos externos.
+El proyecto está orientado a:
+
+* separación de responsabilidades;
+* abstracciones de transporte;
+* dependency inversion;
+* manejo explícito de errores externos;
+* resiliencia;
+* diseño testeable;
+* mantenibilidad de integraciones.
+
+Su objetivo es evitar que los proveedores externos queden acoplados directamente a la lógica de negocio.
 
 ---
 
-### 🦫 [PulseOps](https://github.com/Omar2709/pulseops)
+## 🦫 [PulseOps](https://github.com/Omar2709/pulseops)
 
 Backend concurrente de simulación de trading desarrollado en **Go**.
 
-Actualmente trabaja sobre:
+Actualmente implementa las bases del dominio de órdenes y su ciclo de vida.
 
-* modelado de dominio;
-* ciclo de vida de órdenes;
-* validación de invariantes;
+### Capacidades actuales
+
+* órdenes `BUY` y `SELL`;
+* estados de órdenes;
+* transiciones controladas;
+* cancelación y rechazo;
 * partial fills;
-* representación fixed-point para precio y cantidad;
-* timestamps normalizados a UTC;
-* tests unitarios con el paquete estándar de Go.
+* múltiples fills consecutivos;
+* cálculo de cantidad restante;
+* representación fixed-point para precios;
+* representación fixed-point para cantidades;
+* invariantes de dominio;
+* normalización de timestamps a UTC;
+* tests unitarios utilizando el paquete estándar de Go.
 
-El objetivo es evolucionarlo progresivamente hacia order book, matching engine, persistencia y concurrencia controlada.
+El proyecto evolucionará progresivamente hacia:
+
+```text
+Order Domain
+     ↓
+Order Book
+     ↓
+Matching Engine
+     ↓
+Concurrent Processing
+     ↓
+Persistence
+```
 
 ---
 
@@ -175,45 +294,110 @@ El objetivo es evolucionarlo progresivamente hacia order book, matching engine, 
 
 **Febrero 2022 — Actualidad**
 
-Trabajo principalmente en el ecosistema **Python**, participando en diseño, desarrollo, mantenimiento y despliegue de soluciones backend.
+Trabajo principalmente dentro del ecosistema **Python**, participando en diseño, desarrollo, mantenimiento, testing y despliegue de soluciones backend.
 
 * Desarrollo y mantenimiento de **APIs REST con Django REST Framework y FastAPI**.
-* Implementación de autenticación, autorización, validaciones y permisos.
-* Trabajo con aplicaciones de alto volumen, bases de datos relacionales y optimización de consultas.
-* Uso de **Redis, Celery y Celery Beat** para procesamiento asíncrono y tareas programadas.
+* Implementación de autenticación, autorización, permisos y validaciones.
+* Trabajo con aplicaciones de alto volumen y bases de datos relacionales.
+* Optimización de ORM, índices, consultas N+1 y estrategias de caché.
+* Procesamiento asíncrono con **Celery, Redis y Celery Beat**.
 * Desarrollo de funcionalidades en tiempo real con **Django Channels y WebSockets**.
 * Testing unitario e integración con **pytest y Django TestCase**.
-* Contenerización con **Docker** y despliegue sobre infraestructura cloud.
-* Trabajo con **AWS, GCP, Linux, Nginx, Gunicorn, Uvicorn y CI/CD**.
-* Participación en code reviews, refinamiento técnico y soporte a desarrolladores del equipo.
+* Contenerización mediante **Docker y Docker Compose**.
+* Despliegue y operación con **AWS, GCP, Linux, Nginx, Gunicorn y Uvicorn**.
+* Integración continua mediante **GitHub Actions y pipelines CI/CD**.
+* Participación en code reviews, refinamiento técnico y soporte a otros desarrolladores.
 
 ---
 
 ## 🧠 Actualmente profundizando en
 
-`Distributed Systems` • `AWS Serverless` • `Event-Driven Architecture` • `Go & Concurrency` • `API Security` • `Observability` • `Design Patterns` • `System Design`
+`Distributed Systems`
+•
+`AWS Serverless`
+•
+`Event-Driven Architecture`
+•
+`Go & Concurrency`
+•
+`API Security`
+•
+`Observability`
+•
+`System Design`
+•
+`Design Patterns`
 
 ---
 
 ## 🎯 Enfoque de ingeniería
 
-No me interesa utilizar herramientas únicamente como cajas negras.
+Intento no utilizar las herramientas únicamente como cajas negras.
 
-Intento entender:
+Cuando incorporo una tecnología o patrón, busco entender:
 
 ```text
 ¿Qué problema resuelve?
-        ↓
+        │
+        ▼
 ¿Qué trade-offs introduce?
-        ↓
-¿Cómo falla?
-        ↓
+        │
+        ▼
+¿Cómo puede fallar?
+        │
+        ▼
 ¿Cómo lo observamos?
-        ↓
+        │
+        ▼
 ¿Cómo lo probamos?
 ```
 
-Mi objetivo es construir backend que sea entendible tanto cuando todo funciona como cuando algo falla.
+Me interesa construir sistemas que sean entendibles no sólo cuando funcionan correctamente, sino también cuando presentan fallos, concurrencia, retries o condiciones inesperadas.
+
+---
+
+## 🧭 Áreas en las que trabajo
+
+```text
+Backend Engineering
+│
+├── APIs
+│   ├── REST
+│   ├── Authentication
+│   ├── Authorization
+│   └── OpenAPI
+│
+├── Data
+│   ├── PostgreSQL
+│   ├── Redis
+│   └── SQL
+│
+├── Async & Distributed Systems
+│   ├── Celery
+│   ├── SQS
+│   ├── Idempotency
+│   ├── Transactional Outbox
+│   └── Retry / Backoff
+│
+├── Cloud
+│   ├── AWS Lambda
+│   ├── API Gateway
+│   ├── CloudWatch
+│   ├── IAM
+│   └── SAM
+│
+├── Quality
+│   ├── pytest
+│   ├── Coverage
+│   ├── Ruff
+│   └── CI/CD
+│
+└── Systems
+    ├── Clean Architecture
+    ├── Domain Modeling
+    ├── Observability
+    └── Concurrency
+```
 
 ---
 
