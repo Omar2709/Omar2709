@@ -95,196 +95,62 @@ Me enfoco en construir sistemas **seguros, mantenibles, observables y escalables
 
 # 🚀 Proyectos destacados
 
+Cada proyecto profundiza en un área distinta de ingeniería backend: **arquitectura de APIs, sistemas distribuidos e integraciones con servicios externos**.
+
 ## 👥 [TeamFlow API](https://github.com/Omar2709/teamflow-api)
 
-API REST para gestión colaborativa de **equipos, proyectos y tareas**, construida con **Django, Django REST Framework y PostgreSQL**, con una arquitectura orientada a producción.
+API REST colaborativa para la gestión de **equipos, proyectos, tareas, comentarios, dashboards y notificaciones**, construida con una arquitectura orientada a producción.
 
-```text
-Client
-  │
-  ▼
-Gunicorn
-  │
-  ▼
-Django REST Framework
-  │
-  ├──────────────► PostgreSQL
-  │
-  └──────────────► Redis
-                    Cache / throttling
+**Stack:** Python 3.13 · Django 6 · Django REST Framework · PostgreSQL · Redis · Celery · Docker
 
-Celery Beat
-  │
-  ▼
-Redis
-Celery Broker
-  │
-  ▼
-Celery Worker
-  │
-  ▼
-Notification Services
-  │
-  ▼
-PostgreSQL
-```
+### Destacado
 
-### Capacidades principales
+* Autenticación JWT con access/refresh tokens, rotación y blacklist.
+* Autorización por roles `Owner`, `Admin` y `Member`, con aislamiento de recursos entre equipos.
+* Gestión completa de equipos, proyectos, tareas, comentarios, métricas y notificaciones privadas.
+* Procesamiento asíncrono y periódico con **Celery + Celery Beat**, usando Redis como broker y cache backend.
+* Servicios idempotentes, retries con exponential backoff y optimización de consultas ORM.
+* OpenAPI, Docker Compose, Gunicorn, health/readiness checks, GitHub Actions y suite automatizada de tests.
 
-* JWT authentication con access y refresh tokens.
-* Refresh token rotation y blacklist.
-* Autorización basada en roles:
-
-  * `Owner`
-  * `Admin`
-  * `Member`
-* Aislamiento de recursos entre equipos.
-* Gestión de equipos, miembros, proyectos, tareas y comentarios.
-* Dashboards con métricas agregadas y personales.
-* Sistema privado de notificaciones.
-* PostgreSQL con constraints, índices, annotations y aggregations.
-* Redis como cache backend y broker de Celery.
-* Celery + Celery Beat para procesamiento asíncrono y periódico.
-* Servicios idempotentes para prevenir notificaciones duplicadas.
-* Retries con exponential backoff para fallos transitorios.
-* OpenAPI 3 con Swagger UI y ReDoc.
-* Docker + Docker Compose.
-* Gunicorn.
-* Health y readiness endpoints.
-* GitHub Actions para integración continua.
-* Tests de regresión contra problemas N+1.
-* **225 tests automatizados** cubriendo autenticación, autorización, API, Celery, OpenAPI, persistencia y rendimiento ORM.
-
----
-
-## ☁️ [OrderFlow Serverless](https://github.com/Omar2709/orderflow-serverless)
-
-API serverless de procesamiento de órdenes construida con **Python 3.13 y AWS**.
-
-```text
-Client
-  │
-  ▼
-API Gateway HTTP API
-  │
-  ▼
-AWS Lambda
-  │
-  ▼
-Application Layer
-  │
-  ▼
-Domain Layer
-
-Lambda ───────────────► CloudWatch Logs
-        observability
-```
-
-### Capacidades actuales
-
-* AWS Lambda.
-* API Gateway HTTP API.
-* AWS SAM / CloudFormation.
-* Boundary validation con Pydantic.
-* Separación entre handler, application y domain.
-* IAM con principio de **least privilege**.
-* Structured logging con AWS Lambda Powertools.
-* Correlation IDs.
-* Observabilidad mediante CloudWatch.
-* Manejo seguro de excepciones internas.
-* pytest + coverage.
-* Ruff.
-* Architecture Decision Records.
-
-El proyecto evoluciona progresivamente hacia persistencia y procesamiento distribuido.
+➡️ **[Explorar TeamFlow API](https://github.com/Omar2709/teamflow-api)**
 
 ---
 
 ## ⚡ [FastAPI REST API](https://github.com/Omar2709/fastapi-rest-api)
 
-Backend orientado a producción construido con **FastAPI + PostgreSQL**, enfocado en seguridad de APIs, procesamiento asíncrono e integración con mensajería.
+Backend orientado a procesamiento asíncrono y sistemas distribuidos, construido para profundizar en **seguridad, consistencia, idempotencia, concurrencia y mensajería**.
 
-### Capacidades destacadas
+**Stack:** Python · FastAPI · PostgreSQL · SQLAlchemy 2.x · Alembic · Amazon SQS · Boto3
 
-* PostgreSQL + SQLAlchemy.
-* Alembic migrations.
-* API Keys.
-* HMAC para verificación de credenciales.
-* Scopes y autorización granular.
-* Protección contra escalamiento de privilegios.
-* Idempotency Keys.
-* Fingerprints SHA-256 sobre requests normalizados.
-* Namespace idempotente por propietario.
-* Protección ante requests concurrentes.
-* Transactional Outbox.
-* Message Envelope versionado.
-* Amazon SQS adapter.
-* `FOR UPDATE SKIP LOCKED`.
-* Publishers concurrentes.
-* Exponential backoff.
-* Retry controlado.
-* Clasificación de errores retryable y permanent.
-* Poison event isolation.
-* pytest.
-* Coverage de líneas y branches.
-* GitHub Actions.
+### Destacado
 
-Este proyecto profundiza especialmente en problemas de **consistencia, concurrencia, retries e idempotencia** en sistemas distribuidos.
+* Autenticación mediante API Keys y autorización granular basada en scopes.
+* Idempotencia HTTP con `Idempotency-Key`, fingerprints SHA-256 y control transaccional en PostgreSQL.
+* **Transactional Outbox** para publicación at-least-once de eventos.
+* Integración con **Amazon SQS** mediante ports & adapters.
+* Publisher concurrente con `FOR UPDATE SKIP LOCKED`, exponential backoff y clasificación de errores retryable/permanent.
+* Aislamiento de poison events, pytest, cobertura de líneas/branches, Ruff y GitHub Actions.
+
+➡️ **[Explorar FastAPI REST API](https://github.com/Omar2709/fastapi-rest-api)**
 
 ---
 
 ## 🔌 [Python Integration Service](https://github.com/Omar2709/python-integration-service)
 
-Servicio backend construido con **Python y FastAPI** para practicar y demostrar patrones de integración con APIs de terceros.
+Servicio backend con FastAPI enfocado en diseñar **integraciones con APIs de terceros desacopladas, testeables, mantenibles y resilientes**.
 
-El proyecto está orientado a:
+**Stack:** Python 3.13+ · FastAPI · HTTPX · Pydantic Settings · pytest · Ruff · GitHub Actions
 
-* separación de responsabilidades;
-* abstracciones de transporte;
-* dependency inversion;
-* manejo explícito de errores externos;
-* resiliencia;
-* diseño testeable;
-* mantenibilidad de integraciones.
+### Destacado
 
-Su objetivo es evitar que los proveedores externos queden acoplados directamente a la lógica de negocio.
+* Abstracción de transporte para desacoplar la lógica de integración del cliente HTTP concreto.
+* Dependency inversion, composition root y dependency injection explícita.
+* Gestión del ciclo de vida del cliente HTTP mediante FastAPI lifespan y context managers.
+* Configuración validada con Pydantic Settings y manejo de secretos con `SecretStr`.
+* Traducción de errores HTTP, timeouts y fallos de red a excepciones de integración específicas.
+* Manejo de rate limits con `Retry-After`, retry configurable y tests aislados mediante HTTPX `MockTransport`.
 
----
-
-## 🦫 [PulseOps](https://github.com/Omar2709/pulseops)
-
-Backend concurrente de simulación de trading desarrollado en **Go**.
-
-Actualmente implementa las bases del dominio de órdenes y su ciclo de vida.
-
-### Capacidades actuales
-
-* órdenes `BUY` y `SELL`;
-* estados de órdenes;
-* transiciones controladas;
-* cancelación y rechazo;
-* partial fills;
-* múltiples fills consecutivos;
-* cálculo de cantidad restante;
-* representación fixed-point para precios;
-* representación fixed-point para cantidades;
-* invariantes de dominio;
-* normalización de timestamps a UTC;
-* tests unitarios utilizando el paquete estándar de Go.
-
-El proyecto evolucionará progresivamente hacia:
-
-```text
-Order Domain
-     ↓
-Order Book
-     ↓
-Matching Engine
-     ↓
-Concurrent Processing
-     ↓
-Persistence
-```
+➡️ **[Explorar Python Integration Service](https://github.com/Omar2709/python-integration-service)**
 
 ---
 
