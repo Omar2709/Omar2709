@@ -33,6 +33,12 @@ jobs:
           user: Omar2709
 
           filename: assets/metrics.languages.svg
+          
+          # Incluir repositorios propios y colaboraciones
+          repositories_affiliations: owner, collaborator
+
+          # Evitar duplicar el código de repositorios originales
+          repositories_forks: no
 
           # No mostrar seguidores ni estadísticas generales
           base: ""
