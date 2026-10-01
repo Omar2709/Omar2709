@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="470" viewBox="0 0 1180 470" role="img" aria-labelledby="title desc">
+<title id="title">Python Integration Service</title><desc id="desc">FastAPI inyecta el VendorClient inicializado en lifespan, que depende de un Transport abstracto. HttpxTransport habla con APIs externas y FakeTransport facilita tests aislados.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#729DB7" /></marker><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#183149" stroke-width=".5" opacity=".5"/></pattern></defs>
+<rect width="1180" height="470" rx="18" fill="#080F1F"/>
+<rect x="1" y="1" width="1178" height="468" rx="17" fill="none" stroke="#2B415A" stroke-width="2"/>
+<rect x="20" y="90" width="1140" height="314" rx="10" fill="url(#grid)" stroke="#2B415A" stroke-width="1"/>
+<rect x="20" y="20" width="6" height="50" rx="3" fill="#118F81"/>
+<text x="42" y="37" fill="#118F81" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">PROJECT 03  /  HTTP INTEGRATIONS</text>
+<text x="42" y="67" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="750">Python Integration Service</text>
+<text x="1138" y="54" text-anchor="end" fill="#B2C4D9" font-family="Consolas,monospace" font-size="12">ARCHITECTURE / V1</text>
+<rect x="36" y="196" width="146" height="78" rx="10" fill="#101C31" stroke="#2B415A" stroke-width="1.2"/>
+<text x="109.0" y="231.0" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">Client</text>
+<text x="109.0" y="252.0" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">GET /vendor/items</text>
+<rect x="223" y="196" width="174" height="78" rx="10" fill="#13223A" stroke="#118F81" stroke-width="1.7"/>
+<rect x="234" y="207" width="4" height="56" rx="2" fill="#118F81"/>
+<text x="310.0" y="231.0" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">FastAPI</text>
+<text x="310.0" y="252.0" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">Lifespan + DI</text>
+<rect x="445" y="196" width="194" height="78" rx="10" fill="#13223A" stroke="#118F81" stroke-width="1.7"/>
+<rect x="456" y="207" width="4" height="56" rx="2" fill="#118F81"/>
+<text x="542.0" y="231.0" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">VendorClient</text>
+<text x="542.0" y="252.0" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">Provider semantics</text>
+<rect x="686" y="196" width="165" height="78" rx="10" fill="#13223A" stroke="#118F81" stroke-width="1.7"/>
+<rect x="697" y="207" width="4" height="56" rx="2" fill="#118F81"/>
+<text x="768.5" y="231.0" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">Transport</text>
+<text x="768.5" y="252.0" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">Interface / port</text>
+<rect x="896" y="196" width="232" height="78" rx="10" fill="#101C31" stroke="#2B415A" stroke-width="1.2"/>
+<text x="1012.0" y="231.0" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">HttpxTransport</text>
+<text x="1012.0" y="252.0" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">HTTPX client</text>
+<rect x="896" y="107" width="232" height="65" rx="10" fill="#101C31" stroke="#2B415A" stroke-width="1.2"/>
+<text x="1012.0" y="135.5" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">External API</text>
+<text x="1012.0" y="156.5" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">Third-party service</text>
+<rect x="445" y="315" width="194" height="72" rx="10" fill="#101C31" stroke="#2B415A" stroke-width="1.2"/>
+<text x="542.0" y="347.0" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">Resilience</text>
+<text x="542.0" y="368.0" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">Rate limits + retries</text>
+<rect x="686" y="315" width="165" height="72" rx="10" fill="#101C31" stroke="#2B415A" stroke-width="1.2"/>
+<text x="768.5" y="347.0" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">FakeTransport</text>
+<text x="768.5" y="368.0" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">Isolated tests</text>
+<path d="M182 235 H223" fill="none" stroke="#729DB7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M397 235 H445" fill="none" stroke="#729DB7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M639 235 H686" fill="none" stroke="#729DB7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M851 235 H896" fill="none" stroke="#729DB7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1012 196 V172" fill="none" stroke="#729DB7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M542 315 V274" fill="none" stroke="#729DB7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="5 6"/>
+<path d="M768 315 V274" fill="none" stroke="#729DB7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="5 6"/>
+<text x="41" y="440" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="14">Errores tipados, configuración validada y cierre determinista</text>
+<rect x="1076" y="420" width="57" height="28" rx="6" fill="#101C31" stroke="#2B415A"/>
+<text x="1104.5" y="439" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="12">pytest</text>
+<rect x="1019" y="420" width="50" height="28" rx="6" fill="#101C31" stroke="#2B415A"/>
+<text x="1044.0" y="439" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="12">HTTPX</text>
+<rect x="948" y="420" width="64" height="28" rx="6" fill="#101C31" stroke="#2B415A"/>
+<text x="980.0" y="439" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="12">FastAPI</text>
+</svg>

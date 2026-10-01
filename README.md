@@ -68,50 +68,64 @@ Me interesan los problemas que aparecen más allá de un CRUD: **autenticación 
 
 ## 🚀 Proyectos destacados
 
-Aquí encontrarás proyectos centrados en problemas concretos de ingeniería backend. Cada repositorio incluye documentación técnica; puedes consultar su implementación, configuración y pruebas.
+Proyectos que demuestran **arquitectura, seguridad, persistencia e integraciones**. Los diagramas resumen las decisiones principales de cada implementación; haz clic en ellos para ampliarlos. El código y las pruebas están disponibles públicamente.
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>👥 <a href="https://github.com/Omar2709/teamflow-api">TeamFlow API</a></h3>
-      <p>API colaborativa para administrar equipos, proyectos, tareas y notificaciones.</p>
-      <p><strong>Python · Django · DRF · PostgreSQL · Redis · Celery · Docker</strong></p>
-      <p>Roles y aislamiento entre equipos, JWT, procesamiento asíncrono, OpenAPI, comprobaciones de estado y pruebas automatizadas.</p>
-      <a href="https://github.com/Omar2709/teamflow-api/actions/workflows/ci.yml"><img src="https://github.com/Omar2709/teamflow-api/actions/workflows/ci.yml/badge.svg" alt="Estado de CI de TeamFlow API" /></a>
-      <p><a href="https://github.com/Omar2709/teamflow-api">Código y documentación →</a></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>⚡ <a href="https://github.com/Omar2709/fastapi-rest-api">FastAPI REST API</a></h3>
-      <p>API para estudiar consistencia, seguridad y publicación de eventos en servicios backend.</p>
-      <p><strong>FastAPI · PostgreSQL · SQLAlchemy · Alembic · Amazon SQS</strong></p>
-      <p>API Keys y scopes, claves de idempotencia, Transactional Outbox y adaptador de mensajería con pruebas automatizadas.</p>
-      <a href="https://github.com/Omar2709/fastapi-rest-api/actions/workflows/ci.yml"><img src="https://github.com/Omar2709/fastapi-rest-api/actions/workflows/ci.yml/badge.svg" alt="Estado de CI de FastAPI REST API" /></a>
-      <p><a href="https://github.com/Omar2709/fastapi-rest-api">Código y documentación →</a></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🔌 <a href="https://github.com/Omar2709/python-integration-service">Python Integration Service</a></h3>
-      <p>Servicio de integración con APIs externas, diseñado para desacoplar y probar la comunicación HTTP.</p>
-      <p><strong>Python · FastAPI · HTTPX · Pydantic · pytest</strong></p>
-      <p>Abstracción de transporte, inyección de dependencias, manejo de fallos, rate limits y políticas de reintento.</p>
-      <a href="https://github.com/Omar2709/python-integration-service/actions/workflows/ci.yml"><img src="https://github.com/Omar2709/python-integration-service/actions/workflows/ci.yml/badge.svg" alt="Estado de CI de Python Integration Service" /></a>
-      <p><a href="https://github.com/Omar2709/python-integration-service">Código y documentación →</a></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🧠 Cómo abordo la ingeniería</h3>
-      <p>Antes de incorporar una herramienta o un patrón, busco responder:</p>
-      <p>① ¿Qué problema resuelve?<br />② ¿Qué compromisos introduce?<br />③ ¿Cómo puede fallar?<br />④ ¿Cómo lo probamos y observamos?</p>
-      <p>Mi prioridad es construir software comprensible tanto cuando funciona como cuando falla.</p>
-    </td>
-  </tr>
-</table>
+### 👥 [TeamFlow API](https://github.com/Omar2709/teamflow-api) — Django, equipos y procesamiento asíncrono
+
+API colaborativa con **JWT, roles por equipo, aislamiento de recursos, PostgreSQL, caché con Redis y tareas con Celery**. Incluye contratos OpenAPI, controles de consultas y pruebas automatizadas.
+
+<a href="assets/architecture-teamflow-dark.svg" title="Ampliar arquitectura de TeamFlow API">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-teamflow-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/architecture-teamflow-light.svg" />
+    <img src="assets/architecture-teamflow-dark.svg" width="100%" alt="Arquitectura de TeamFlow: cliente, Gunicorn y Django REST, PostgreSQL, Redis como caché y broker, Celery Worker y Celery Beat." />
+  </picture>
+</a>
+
+[**Código y documentación ↗**](https://github.com/Omar2709/teamflow-api) · [**Pruebas por módulo ↗**](https://github.com/Omar2709/teamflow-api/tree/main/apps) · [**Pipeline CI ↗**](https://github.com/Omar2709/teamflow-api/actions/workflows/ci.yml)
+
+[![TeamFlow CI](https://github.com/Omar2709/teamflow-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Omar2709/teamflow-api/actions/workflows/ci.yml)
+
+### ⚡ [FastAPI REST API](https://github.com/Omar2709/fastapi-rest-api) — consistencia y mensajería
+
+API centrada en **API Keys y scopes, idempotencia HTTP y Transactional Outbox**. Separa servicios, dominio y adaptadores; un publisher publica eventos mediante el adaptador de **Amazon SQS**, con lógica de reintentos y fallos terminales.
+
+<a href="assets/architecture-fastapi-dark.svg" title="Ampliar arquitectura de FastAPI REST API">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-fastapi-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/architecture-fastapi-light.svg" />
+    <img src="assets/architecture-fastapi-dark.svg" width="100%" alt="Arquitectura de FastAPI REST API: cliente, autenticación y scopes, servicios, PostgreSQL con Jobs e idempotencia y Outbox Publisher conectado mediante adaptador a Amazon SQS." />
+  </picture>
+</a>
+
+[**Código y documentación ↗**](https://github.com/Omar2709/fastapi-rest-api) · [**Pruebas ↗**](https://github.com/Omar2709/fastapi-rest-api/tree/main/tests) · [**Pipeline CI ↗**](https://github.com/Omar2709/fastapi-rest-api/actions/workflows/ci.yml)
+
+[![FastAPI CI](https://github.com/Omar2709/fastapi-rest-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Omar2709/fastapi-rest-api/actions/workflows/ci.yml)
+
+### 🔌 [Python Integration Service](https://github.com/Omar2709/python-integration-service) — integraciones resilientes
+
+Servicio con **inyección de dependencias, abstracción de transporte y HTTPX**. Separa semántica de proveedores y transporte, valida respuestas, gestiona excepciones y utiliza dobles de prueba para aislar integraciones externas.
+
+<a href="assets/architecture-integration-dark.svg" title="Ampliar arquitectura de Python Integration Service">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-integration-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/architecture-integration-light.svg" />
+    <img src="assets/architecture-integration-dark.svg" width="100%" alt="Arquitectura de Python Integration Service: cliente, FastAPI con inyección de dependencias, VendorClient, interfaz de transporte, HttpxTransport y API externa; políticas de resiliencia y FakeTransport para pruebas." />
+  </picture>
+</a>
+
+[**Código y documentación ↗**](https://github.com/Omar2709/python-integration-service) · [**Pruebas ↗**](https://github.com/Omar2709/python-integration-service/tree/main/tests) · [**Pipeline CI ↗**](https://github.com/Omar2709/python-integration-service/actions/workflows/ci.yml)
+
+[![Integration CI](https://github.com/Omar2709/python-integration-service/actions/workflows/ci.yml/badge.svg)](https://github.com/Omar2709/python-integration-service/actions/workflows/ci.yml)
+
+<sub>Los diagramas son vistas simplificadas de las arquitecturas documentadas; cada repositorio contiene los detalles y sus pruebas.</sub>
 
 ---
 
 ## 💼 Experiencia y formación
 
 **Backend Developer — Efficode** · *Febrero de 2022 – actualidad*
+
 Desarrollo de APIs y servicios backend con Python; trabajo con persistencia, integraciones, pruebas, procesamiento asíncrono y despliegue. Para consultar mi experiencia completa, visita mi [portafolio](https://omar-lopez-portafolio.netlify.app/) o [LinkedIn](https://www.linkedin.com/in/omar-l%C3%B3pez-8a0009269/).
 
 **Ingeniería de Sistemas** · Universidad de La Guajira

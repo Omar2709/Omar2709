@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="470" viewBox="0 0 1180 470" role="img" aria-labelledby="title desc">
+<title id="title">FastAPI REST API</title><desc id="desc">El contrato HTTP usa autenticación por API Keys y scopes. El servicio persiste Jobs, claves de idempotencia y Outbox en PostgreSQL; un publisher envía los eventos mediante adapter a SQS.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#729DB7" /></marker><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#183149" stroke-width=".5" opacity=".5"/></pattern></defs>
+<rect width="1180" height="470" rx="18" fill="#080F1F"/>
+<rect x="1" y="1" width="1178" height="468" rx="17" fill="none" stroke="#2B415A" stroke-width="2"/>
+<rect x="20" y="90" width="1140" height="314" rx="10" fill="url(#grid)" stroke="#2B415A" stroke-width="1"/>
+<rect x="20" y="20" width="6" height="50" rx="3" fill="#8D72DC"/>
+<text x="42" y="37" fill="#8D72DC" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">PROJECT 02  /  CONSISTENCY + MESSAGING</text>
+<text x="42" y="67" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="750">FastAPI REST API</text>
+<text x="1138" y="54" text-anchor="end" fill="#B2C4D9" font-family="Consolas,monospace" font-size="12">ARCHITECTURE / V1</text>
+<rect x="36" y="198" width="148" height="75" rx="10" fill="#101C31" stroke="#2B415A" stroke-width="1.2"/>
+<text x="110.0" y="231.5" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">Client</text>
+<text x="110.0" y="252.5" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">HTTP requests</text>
+<rect x="228" y="198" width="192" height="75" rx="10" fill="#13223A" stroke="#8D72DC" stroke-width="1.7"/>
+<rect x="239" y="209" width="4" height="53" rx="2" fill="#8D72DC"/>
+<text x="324.0" y="231.5" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">FastAPI</text>
+<text x="324.0" y="252.5" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">API Keys + scopes</text>
+<rect x="466" y="198" width="170" height="75" rx="10" fill="#13223A" stroke="#8D72DC" stroke-width="1.7"/>
+<rect x="477" y="209" width="4" height="53" rx="2" fill="#8D72DC"/>
+<text x="551.0" y="231.5" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">Services</text>
+<text x="551.0" y="252.5" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">Domain rules</text>
+<rect x="715" y="123" width="182" height="79" rx="10" fill="#101C31" stroke="#2B415A" stroke-width="1.2"/>
+<text x="806.0" y="158.5" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">PostgreSQL</text>
+<text x="806.0" y="179.5" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">Jobs · Keys · Outbox</text>
+<rect x="715" y="287" width="182" height="77" rx="10" fill="#101C31" stroke="#2B415A" stroke-width="1.2"/>
+<text x="806.0" y="321.5" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">Outbox Publisher</text>
+<text x="806.0" y="342.5" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">Retry / backoff</text>
+<rect x="947" y="287" width="196" height="77" rx="10" fill="#101C31" stroke="#2B415A" stroke-width="1.2"/>
+<text x="1045.0" y="321.5" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">Broker adapter</text>
+<text x="1045.0" y="342.5" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">SQS via Boto3</text>
+<rect x="947" y="123" width="196" height="79" rx="10" fill="#101C31" stroke="#2B415A" stroke-width="1.2"/>
+<text x="1045.0" y="158.5" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">Amazon SQS</text>
+<text x="1045.0" y="179.5" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="13">Message queue</text>
+<path d="M184 237 H228" fill="none" stroke="#729DB7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M420 237 H466" fill="none" stroke="#729DB7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M636 235 H674 V162 H715" fill="none" stroke="#729DB7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M806 202 V287" fill="none" stroke="#729DB7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M897 325 H947" fill="none" stroke="#729DB7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1045 287 V202" fill="none" stroke="#729DB7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="775" y="270" text-anchor="middle" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="550">eligible events</text>
+<text x="41" y="440" fill="#B2C4D9" font-family="Segoe UI,Arial,sans-serif" font-size="14">Un mismo request idempotente no debe crear dos Jobs</text>
+<rect x="1097" y="420" width="36" height="28" rx="6" fill="#101C31" stroke="#2B415A"/>
+<text x="1115.0" y="439" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="12">SQS</text>
+<rect x="1033" y="420" width="57" height="28" rx="6" fill="#101C31" stroke="#2B415A"/>
+<text x="1061.5" y="439" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="12">Outbox</text>
+<rect x="941" y="420" width="85" height="28" rx="6" fill="#101C31" stroke="#2B415A"/>
+<text x="983.5" y="439" text-anchor="middle" fill="#F0F7FF" font-family="Segoe UI,Arial,sans-serif" font-size="12">SQLAlchemy</text>
+</svg>
