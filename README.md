@@ -25,8 +25,10 @@
 
 <br /><br />
 
-<!-- Contador dinámico de visitas del perfil -->
-<img src="https://komarev.com/ghpvc/?username=Omar2709&amp;label=Visitas+al+perfil&amp;color=1664c0&amp;style=flat-square" alt="Visitas al perfil" />
+<!-- Contador externo de visitas: Visitor Badge Reloaded -->
+<a href="https://vbr.nathanchung.dev/info/Omar2709.Omar2709" title="Ver estadísticas del contador">
+  <img src="https://vbr.nathanchung.dev/badge?page_id=Omar2709.Omar2709&amp;color=1664c0&amp;lcolor=24292e&amp;style=flat-square&amp;text=Visitas" alt="Contador aproximado de visitas al perfil" />
+</a>
 
 </div>
 
