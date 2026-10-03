@@ -23,6 +23,10 @@
 <a href="https://github.com/Omar2709?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Repositorios-24292E?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Repositorios" /></a>
 
 
+<br /><br />
+
+<!-- Contador dinámico de visitas del perfil -->
+<img src="https://komarev.com/ghpvc/?username=Omar2709&amp;label=Visitas+al+perfil&amp;color=1664c0&amp;style=flat-square" alt="Visitas al perfil" />
 
 </div>
 
