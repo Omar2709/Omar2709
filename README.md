@@ -10,17 +10,19 @@
 
 <br />
 
-<a href="https://github.com/Omar2709"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=2900&pause=1200&color=2786DE&center=true&vCenter=true&width=850&height=45&lines=Backend+Engineer+%7C+Python+%26+FastAPI;Django+REST+Framework+%7C+PostgreSQL;API+Design+%7C+Integrations+%7C+Distributed+Systems;AWS+Serverless+%7C+Docker+%7C+CI%2FCD" alt="Especialidades de Omar López" /></a>
+<!-- Texto nativo de GitHub: no depende de servidores externos ni de SVG animados -->
+<p>
+  <strong>Python · FastAPI · Django REST Framework · PostgreSQL</strong><br />
+  <sub>API Design · Integrations · Distributed Systems · AWS Serverless · Docker · CI/CD</sub>
+</p>
 
 <br />
 
-<a href="https://omar-lopez-portafolio.netlify.app/"><img src="https://img.shields.io/badge/Portafolio-Visitar-1664C0?style=for-the-badge&logo=netlify&logoColor=white" alt="Portafolio" /></a>
-<a href="https://www.linkedin.com/in/omar-l%C3%B3pez-8a0009269/"><img src="https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://github.com/Omar2709?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Repositorios-24292E?style=for-the-badge&logo=github&logoColor=white" alt="Repositorios" /></a>
+<a href="https://omar-lopez-portafolio.netlify.app/"><img src="https://img.shields.io/badge/Portafolio-Visitar-1664C0?style=for-the-badge&amp;logo=netlify&amp;logoColor=white" alt="Portafolio" /></a>
+<a href="https://www.linkedin.com/in/omar-l%C3%B3pez-8a0009269/"><img src="https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
+<a href="https://github.com/Omar2709?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Repositorios-24292E?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Repositorios" /></a>
 
-<br /><br />
 
-<img src="https://komarev.com/ghpvc/?username=Omar2709&label=Visitas+al+perfil&color=1664c0&style=flat-square" alt="Visitas al perfil" />
 
 </div>
 
@@ -50,19 +52,19 @@ Mi enfoque combina diseño de software, pruebas automatizadas y decisiones de ar
 
 <p><strong>Backend y lenguajes</strong></p>
 
-<img src="https://skillicons.dev/icons?i=python,django,fastapi,go&perline=4" alt="Python, Django, FastAPI y Go" />
+<img src="https://skillicons.dev/icons?i=python,django,fastapi,go&amp;perline=4" alt="Python, Django, FastAPI y Go" />
 
 <br /><br />
 
 <p><strong>Datos, mensajería y cloud</strong></p>
 
-<img src="https://skillicons.dev/icons?i=postgres,mysql,redis,firebase,aws&perline=5" alt="PostgreSQL, MySQL, Redis, Firebase y AWS" />
+<img src="https://skillicons.dev/icons?i=postgres,mysql,redis,firebase,aws&amp;perline=5" alt="PostgreSQL, MySQL, Redis, Firebase y AWS" />
 
 <br /><br />
 
 <p><strong>Herramientas y calidad</strong></p>
 
-<img src="https://skillicons.dev/icons?i=docker,linux,git,github,githubactions,postman,vscode&perline=7" alt="Docker, Linux, Git, GitHub Actions, Postman y VS Code" />
+<img src="https://skillicons.dev/icons?i=docker,linux,git,github,githubactions,postman,vscode&amp;perline=7" alt="Docker, Linux, Git, GitHub Actions, Postman y VS Code" />
 
 <br /><br />
 
