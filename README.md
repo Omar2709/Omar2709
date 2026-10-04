@@ -152,7 +152,7 @@ Busco construir sistemas que sigan siendo entendibles no solamente cuando funcio
 
 ### Backend Developer — Efficode
 
-**Febrero 2022 — Actualidad**
+**Febrero 2022 — Octubre 2026**
 
 Trabajo principalmente dentro del ecosistema Python, participando en el ciclo completo de funcionalidades backend: **diseño, implementación, testing, despliegue y operación**.
 
