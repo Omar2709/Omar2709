@@ -1,245 +1,205 @@
-
 <div align="center">
 
-<!-- Banner adaptable al tema de GitHub -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg" />
-  <img src="assets/banner-dark.svg" width="100%" alt="Omar López — Backend Engineer" />
-</picture>
+### Backend Engineer · APIs · Distributed Systems · Cloud
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&pause=1100&color=2F81F7&center=true&vCenter=true&width=900&lines=Python+%7C+Django+%7C+FastAPI+%7C+PostgreSQL;APIs+%7C+Integrations+%7C+Distributed+Systems;Redis+%7C+Celery+%7C+Amazon+SQS;AWS+Serverless+%7C+Docker+%7C+CI%2FCD;Go+%7C+Domain+Modeling+%7C+Concurrency"
+  alt="Backend engineering focus"
+/>
 
 <br />
 
-<!-- Texto nativo de GitHub: no depende de servidores externos ni de SVG animados -->
-<p>
-  <strong>Python · FastAPI · Django REST Framework · PostgreSQL</strong><br />
-  <sub>API Design · Integrations · Distributed Systems · AWS Serverless · Docker · CI/CD</sub>
-</p>
-
-<br />
-
-<a href="https://omar-lopez-portafolio.netlify.app/"><img src="https://img.shields.io/badge/Portafolio-Visitar-1664C0?style=for-the-badge&amp;logo=netlify&amp;logoColor=white" alt="Portafolio" /></a>
-<a href="https://www.linkedin.com/in/omar-l%C3%B3pez-8a0009269/"><img src="https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
-<a href="https://github.com/Omar2709?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Repositorios-24292E?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Repositorios" /></a>
-
-
-<br /><br />
-
-<!-- Contador externo de visitas: Visitor Badge Reloaded -->
-<a href="https://vbr.nathanchung.dev/info/Omar2709.Omar2709" title="Ver estadísticas del contador">
-  <img src="https://vbr.nathanchung.dev/badge?page_id=Omar2709.Omar2709&amp;color=1664c0&amp;lcolor=24292e&amp;style=flat-square&amp;text=Visitas" alt="Contador aproximado de visitas al perfil" />
+<a href="https://omar-lopez-portafolio.netlify.app/">
+  <img
+    src="https://img.shields.io/badge/Portfolio-Visit-1664C0?style=for-the-badge&logo=netlify&logoColor=white"
+    alt="Portfolio"
+  />
+</a>
+<a href="https://www.linkedin.com/in/omar-l%C3%B3pez-8a0009269/">
+  <img
+    src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
+    alt="LinkedIn"
+  />
+</a>
+<a href="https://github.com/Omar2709?tab=repositories">
+  <img
+    src="https://img.shields.io/badge/GitHub-Repositories-24292E?style=for-the-badge&logo=github&logoColor=white"
+    alt="GitHub repositories"
+  />
 </a>
 
 </div>
 
 ---
 
-## 👨‍💻 Sobre mí
+## 👋 Sobre mí
 
-Soy **Omar López**, ingeniero de sistemas de Colombia 🇨🇴 y **Backend Engineer especializado en Python**.
+Soy **Omar López**, Ingeniero de Sistemas y **Backend Engineer especializado en Python**, con más de **4 años de experiencia profesional** construyendo APIs, servicios backend e integraciones con **Django, Django REST Framework y FastAPI**.
 
-Trabajo con **Django, Django REST Framework y FastAPI** para diseñar APIs, servicios backend e integraciones mantenibles, seguras y fáciles de probar.
+He trabajado con aplicaciones de hasta **30.000 usuarios**, servicios con **decenas o cientos de miles de peticiones diarias** y bases de datos relacionales de **20–50 GB**.
 
-Me interesan especialmente los problemas que aparecen más allá de un CRUD: **autenticación, autorización, integridad transaccional, idempotencia, mensajería, procesamiento asíncrono y resiliencia**.
+Mi enfoque está en construir sistemas backend **seguros, mantenibles, observables y resilientes**, prestando especial atención a problemas que van más allá de un CRUD: **consistencia transaccional, idempotencia, autorización, procesamiento asíncrono, integraciones externas, retries, concurrencia y sistemas distribuidos**.
 
-Mi enfoque combina diseño de software, pruebas automatizadas y decisiones de arquitectura justificadas.
-
-- 🐍 **Especialidad principal:** Python, Django REST Framework y FastAPI.
-- 🧩 **Backend:** APIs REST, autenticación, autorización e integraciones.
-- 🏗️ **Arquitectura:** separación de responsabilidades, modelado de dominio y sistemas distribuidos.
-- ⚙️ **Infraestructura:** PostgreSQL, Redis, Celery, Docker, GitHub Actions y AWS.
-- 🌱 **Actualmente profundizando en:** Go, concurrencia, observabilidad y arquitectura orientada a eventos.
+Actualmente también desarrollo con **Go** para profundizar en modelado de dominio, concurrencia y diseño de sistemas backend.
 
 ---
 
-## 🛠️ Tecnologías
+## 📈 Impacto profesional
+
+| Experiencia | Escala | Rendimiento | Calidad |
+| --- | --- | --- | --- |
+| **4+ años** en Backend Engineering | Hasta **30K usuarios** | Endpoint de **2–3 s a <700 ms** | **70–80 %** de cobertura en módulos relevantes |
+| Python, Django y FastAPI | Bases de datos de **20–50 GB** | Miles de tareas asíncronas/día | Testing, code review y CI/CD |
+
+---
+
+## 🧠 En qué me enfoco
+
+- **API Engineering:** diseño REST, contratos, validación, autenticación y autorización.
+- **Data & Consistency:** PostgreSQL, transacciones, ORM, índices, idempotencia y Transactional Outbox.
+- **Async & Integrations:** Celery, Redis, Amazon SQS, APIs de terceros, retries, backoff y rate limits.
+- **Architecture:** separación de responsabilidades, dependency inversion, domain modeling y diseño mantenible.
+- **Reliability:** manejo explícito de fallos, observabilidad, health checks y configuración segura.
+- **Engineering Quality:** pytest, pruebas de integración, Ruff, GitHub Actions, Docker y CI/CD.
+
+---
+
+## 🚀 Selected Engineering Projects
+
+Proyectos orientados a explorar y demostrar distintas áreas de **Backend Engineering**, desde aplicaciones web tradicionales hasta sistemas distribuidos, integraciones externas, serverless y concurrencia.
+
+| Proyecto | Qué demuestra |
+| --- | --- |
+| 🔌 **[Python Integration Service](https://github.com/Omar2709/python-integration-service)** | Integraciones resilientes con APIs externas mediante transport abstractions, dependency inversion, retries, retry budgets, rate limiting, idempotencia y testing aislado. |
+| ⚡ **[FastAPI REST API](https://github.com/Omar2709/fastapi-rest-api)** | Consistencia y procesamiento distribuido con API Keys, scopes, idempotencia HTTP, PostgreSQL, Transactional Outbox, Amazon SQS y manejo explícito de fallos. |
+| ☁️ **[OrderFlow Serverless](https://github.com/Omar2709/orderflow-serverless)** | Arquitectura serverless con AWS Lambda, API Gateway, DynamoDB, AWS SAM, IAM de mínimo privilegio, observabilidad y separación entre aplicación y dominio. |
+| 👥 **[TeamFlow API](https://github.com/Omar2709/teamflow-api)** | Backend Django orientado a producción con JWT, autorización basada en roles, PostgreSQL, Redis, Celery, tareas periódicas, OpenAPI y testing automatizado. |
+| 📊 **[PulseOps](https://github.com/Omar2709/pulseops)** | Trading backend en Go con modelado de dominio, matching por precio/FIFO, fills parciales, aritmética fixed-point, atomicidad en memoria y sincronización concurrente. |
+
+> Cada repositorio contiene su propia documentación técnica, decisiones de diseño, pruebas automatizadas y evolución incremental.
+
+---
+
+## 🛠️ Tech Stack
 
 <div align="center">
 
-<p><strong>Backend y lenguajes</strong></p>
+### Backend
 
-<img src="https://skillicons.dev/icons?i=python,django,fastapi,go&amp;perline=4" alt="Python, Django, FastAPI y Go" />
+<img src="https://skillicons.dev/icons?i=python,django,fastapi,go&perline=4" alt="Python, Django, FastAPI and Go" />
 
-<br /><br />
+<br />
 
-<p><strong>Datos, mensajería y cloud</strong></p>
+**Python · Django · Django REST Framework · FastAPI · Go**
 
-<img src="https://skillicons.dev/icons?i=postgres,mysql,redis,firebase,aws&amp;perline=5" alt="PostgreSQL, MySQL, Redis, Firebase y AWS" />
+### Data & Async
 
-<br /><br />
+<img src="https://skillicons.dev/icons?i=postgres,mysql,redis&perline=3" alt="PostgreSQL, MySQL and Redis" />
 
-<p><strong>Herramientas y calidad</strong></p>
+<br />
 
-<img src="https://skillicons.dev/icons?i=docker,linux,git,github,githubactions,postman,vscode&amp;perline=7" alt="Docker, Linux, Git, GitHub Actions, Postman y VS Code" />
+**PostgreSQL · MySQL · SQLAlchemy · Django ORM · Redis · Celery · Amazon SQS · DynamoDB**
 
-<br /><br />
+### Cloud & DevOps
 
-<sub>
-También trabajo con SQLAlchemy, Alembic, Celery, Amazon SQS,
-HTTPX, pytest, Ruff y CI/CD.
-</sub>
+<img src="https://skillicons.dev/icons?i=aws,docker,linux,git,github,githubactions&perline=6" alt="AWS, Docker, Linux, Git and GitHub Actions" />
+
+<br />
+
+**AWS · GCP · Docker · Linux · GitHub Actions · Nginx · Gunicorn · Uvicorn**
+
+### Quality & Architecture
+
+**pytest · Django TestCase · Ruff · REST · OpenAPI · Clean Architecture · Design Patterns · OOP**
 
 </div>
 
 ---
 
-## 📊 Lenguajes más utilizados
+## 🎯 Engineering Mindset
+
+No me interesa utilizar tecnologías o patrones únicamente como cajas negras.
+
+Cuando incorporo una decisión técnica, intento recorrer esta secuencia:
 
 <div align="center">
 
-<!-- Generado automáticamente mediante GitHub Actions -->
-<img src="assets/metrics.languages.svg" width="480" alt="Distribución de lenguajes de programación de Omar López" />
+**¿Qué problema resuelve?**
+
+↓
+
+**¿Qué trade-offs introduce?**
+
+↓
+
+**¿Cómo puede fallar?**
+
+↓
+
+**¿Cómo lo observamos?**
+
+↓
+
+**¿Cómo lo probamos?**
+
+</div>
+
+Busco construir sistemas que sigan siendo entendibles no solamente cuando funcionan correctamente, sino también cuando aparecen **fallos, concurrencia, reintentos, degradaciones o condiciones inesperadas**.
+
+---
+
+## 💼 Experiencia profesional
+
+### Backend Developer — Efficode
+
+**Febrero 2022 — Actualidad**
+
+Trabajo principalmente dentro del ecosistema Python, participando en el ciclo completo de funcionalidades backend: **diseño, implementación, testing, despliegue y operación**.
+
+- Diseño y mantenimiento de APIs REST con **Django REST Framework y FastAPI**.
+- Implementación de autenticación, autorización, permisos y validaciones.
+- Trabajo con aplicaciones de alto volumen y bases de datos relacionales.
+- Optimización de **ORM, índices, consultas N+1 y estrategias de caché con Redis**.
+- Procesamiento asíncrono con **Celery, Redis y Celery Beat**.
+- Desarrollo de funcionalidades en tiempo real con **Django Channels y WebSockets**.
+- Testing unitario y de integración con **pytest y Django TestCase**.
+- Contenerización mediante **Docker y Docker Compose**.
+- CI/CD mediante **GitHub Actions**.
+- Despliegues y operación con **AWS, GCP, Linux, Nginx, Gunicorn y Uvicorn**.
+- Participación en **code reviews, incidentes, refinamiento y decisiones técnicas**.
+- Apoyo técnico a desarrolladores junior.
+
+---
+
+## 🎓 Formación
+
+**Ingeniería de Sistemas**
+Universidad de La Guajira · Graduado en 2026
+
+---
+
+## 🌱 Actualmente profundizando en
+
+<div align="center">
+
+**Go · Concurrency · Distributed Systems · Event-Driven Architecture · AWS Serverless · Observability · System Design**
+
+</div>
+
+---
+
+<div align="center">
+
+### Building reliable backend systems
+
+<sub>
+APIs · Integrations · Distributed Systems · Cloud · Engineering Quality
+</sub>
 
 <br />
 
 <sub>
-Estadísticas automáticas de mis repositorios públicos propios,
-excluyendo forks y repositorios de otros colaboradores.
-Los porcentajes representan distribución de código,
-no niveles de experiencia profesional.
-</sub>
-
-</div>
-
----
-
-## 🚀 Proyectos destacados
-
-Proyectos que demuestran **arquitectura, seguridad, persistencia, calidad e integraciones**.
-
-Cada proyecto incluye su arquitectura simplificada, documentación técnica, código fuente y pruebas automatizadas.
-
-### 👥 [TeamFlow API](https://github.com/Omar2709/teamflow-api)
-
-**Django · Django REST Framework · PostgreSQL · Redis · Celery**
-
-API colaborativa para gestionar equipos, proyectos, tareas, comentarios y notificaciones, con una arquitectura orientada a producción.
-
-**Características principales:**
-
-- Autenticación JWT y autorización basada en roles.
-- Aislamiento de recursos entre equipos.
-- Persistencia relacional mediante PostgreSQL.
-- Caché y mensajería utilizando Redis.
-- Procesamiento asíncrono mediante Celery.
-- Tareas periódicas mediante Celery Beat.
-- Contratos OpenAPI y pruebas automatizadas.
-- Contenerización mediante Docker.
-
-**Arquitectura**
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-teamflow-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/architecture-teamflow-light.svg" />
-  <img src="assets/architecture-teamflow-dark.svg" width="100%" alt="Arquitectura de TeamFlow API: Django, PostgreSQL, Redis y Celery" />
-</picture>
-
-[🔍 Ampliar diagrama](assets/architecture-teamflow-dark.svg) · [Versión clara](assets/architecture-teamflow-light.svg)
-
-[**Código y documentación ↗**](https://github.com/Omar2709/teamflow-api) · [**Pruebas ↗**](https://github.com/Omar2709/teamflow-api/tree/main/apps) · [**Pipeline CI ↗**](https://github.com/Omar2709/teamflow-api/actions/workflows/ci.yml)
-
-[![TeamFlow CI](https://github.com/Omar2709/teamflow-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Omar2709/teamflow-api/actions/workflows/ci.yml)
-
----
-
-### ⚡ [FastAPI REST API](https://github.com/Omar2709/fastapi-rest-api)
-
-**Python · FastAPI · PostgreSQL · SQLAlchemy · Alembic · Amazon SQS**
-
-API orientada al estudio e implementación de patrones relacionados con consistencia, seguridad y procesamiento distribuido.
-
-**Características principales:**
-
-- Autenticación mediante API Keys.
-- Autorización granular basada en scopes.
-- Idempotencia HTTP mediante Idempotency-Key.
-- Persistencia transaccional con PostgreSQL.
-- Implementación del patrón Transactional Outbox.
-- Separación de dominio, servicios y adaptadores.
-- Integración con Amazon SQS mediante Boto3.
-- Políticas de reintentos y manejo de fallos terminales.
-- Pruebas automatizadas y análisis de cobertura.
-
-**Arquitectura**
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-fastapi-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/architecture-fastapi-light.svg" />
-  <img src="assets/architecture-fastapi-dark.svg" width="100%" alt="Arquitectura de FastAPI REST API: servicios, dominio, PostgreSQL, Transactional Outbox y Amazon SQS" />
-</picture>
-
-[🔍 Ampliar diagrama](assets/architecture-fastapi-dark.svg) · [Versión clara](assets/architecture-fastapi-light.svg)
-
-[**Código y documentación ↗**](https://github.com/Omar2709/fastapi-rest-api) · [**Pruebas ↗**](https://github.com/Omar2709/fastapi-rest-api/tree/main/tests) · [**Pipeline CI ↗**](https://github.com/Omar2709/fastapi-rest-api/actions/workflows/ci.yml)
-
-[![FastAPI CI](https://github.com/Omar2709/fastapi-rest-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Omar2709/fastapi-rest-api/actions/workflows/ci.yml)
-
----
-
-### 🔌 [Python Integration Service](https://github.com/Omar2709/python-integration-service)
-
-**Python · FastAPI · HTTPX · Pydantic · pytest**
-
-Servicio backend enfocado en integraciones con APIs externas, diseñado para desacoplar la lógica de negocio de los mecanismos de comunicación.
-
-**Características principales:**
-
-- Abstracción de transporte HTTP.
-- Inyección explícita de dependencias.
-- Gestión del ciclo de vida del cliente HTTP.
-- Configuración validada con Pydantic Settings.
-- Excepciones especializadas de integración.
-- Tratamiento de errores HTTP, timeouts y rate limits.
-- Políticas configurables de reintentos.
-- Pruebas aisladas mediante dobles de prueba.
-- Integración continua con GitHub Actions.
-
-**Arquitectura**
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-integration-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/architecture-integration-light.svg" />
-  <img src="assets/architecture-integration-dark.svg" width="100%" alt="Arquitectura de Python Integration Service: FastAPI, VendorClient, abstracción de transporte, HTTPX y API externa" />
-</picture>
-
-[🔍 Ampliar diagrama](assets/architecture-integration-dark.svg) · [Versión clara](assets/architecture-integration-light.svg)
-
-[**Código y documentación ↗**](https://github.com/Omar2709/python-integration-service) · [**Pruebas ↗**](https://github.com/Omar2709/python-integration-service/tree/main/tests) · [**Pipeline CI ↗**](https://github.com/Omar2709/python-integration-service/actions/workflows/ci.yml)
-
-[![Integration CI](https://github.com/Omar2709/python-integration-service/actions/workflows/ci.yml/badge.svg)](https://github.com/Omar2709/python-integration-service/actions/workflows/ci.yml)
-
-<sub>
-Los diagramas representan vistas simplificadas de las arquitecturas
-documentadas en cada repositorio.
-</sub>
-
----
-
-## 💼 Experiencia y formación
-
-### Backend Developer — Efficode
-
-**Febrero de 2022 – actualidad**
-
-Desarrollo de APIs y servicios backend con Python, trabajando con persistencia, integraciones, pruebas automatizadas, procesamiento asíncrono y despliegue.
-
-Mi experiencia incluye diseño y desarrollo de funcionalidades backend, integración de servicios y aplicación de buenas prácticas de ingeniería.
-
-Para conocer mi trayectoria profesional completa:
-
-[**Portafolio ↗**](https://omar-lopez-portafolio.netlify.app/) · [**LinkedIn ↗**](https://www.linkedin.com/in/omar-l%C3%B3pez-8a0009269/)
-
-### Formación académica
-
-**Ingeniería de Sistemas** — Universidad de La Guajira
-
----
-
-<div align="center">
-
-<sub>
-Building reliable backend systems,
-one architectural decision at a time.
+One engineering decision at a time.
 </sub>
 
 </div>
