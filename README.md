@@ -56,8 +56,8 @@ Actualmente también desarrollo con **Go** para profundizar en modelado de domin
 ## 🧠 En qué me enfoco
 
 - **API Engineering:** diseño REST, contratos, validación, autenticación y autorización.
-- **Data & Consistency:** PostgreSQL, transacciones, ORM, índices, idempotencia y Transactional Outbox.
-- **Async & Integrations:** Celery, Redis, Amazon SQS, APIs de terceros, retries, backoff y rate limits.
+- **Data & Consistency:** PostgreSQL, DynamoDB, transacciones, ORM, índices, idempotencia y Transactional Outbox.
+- **Async & Integrations:** Celery, Redis, Amazon SQS, APIs de terceros, HTTPX, retries, exponential backoff, Retry-After y rate limiting.
 - **Architecture:** separación de responsabilidades, dependency inversion, domain modeling y diseño mantenible.
 - **Reliability:** manejo explícito de fallos, observabilidad, health checks y configuración segura.
 - **Engineering Quality:** pytest, pruebas de integración, Ruff, GitHub Actions, Docker y CI/CD.
@@ -70,11 +70,11 @@ Proyectos orientados a explorar y demostrar distintas áreas de **Backend Engine
 
 | Proyecto | Qué demuestra |
 | --- | --- |
-| 🔌 **[Python Integration Service](https://github.com/Omar2709/python-integration-service)** | Integraciones resilientes con APIs externas mediante transport abstractions, dependency inversion, retries, retry budgets, rate limiting, idempotencia y testing aislado. |
+| 🔌 **[Python Integration Service](https://github.com/Omar2709/python-integration-service)** | Integraciones resilientes con APIs externas mediante HTTPX, transport abstractions, dependency inversion, retries, exponential backoff, Retry-After, rate limiting y testing aislado. |
 | ⚡ **[FastAPI REST API](https://github.com/Omar2709/fastapi-rest-api)** | Consistencia y procesamiento distribuido con API Keys, scopes, idempotencia HTTP, PostgreSQL, Transactional Outbox, Amazon SQS y manejo explícito de fallos. |
-| ☁️ **[OrderFlow Serverless](https://github.com/Omar2709/orderflow-serverless)** | Arquitectura serverless con AWS Lambda, API Gateway, DynamoDB, AWS SAM, IAM de mínimo privilegio, observabilidad y separación entre aplicación y dominio. |
-| 👥 **[TeamFlow API](https://github.com/Omar2709/teamflow-api)** | Backend Django orientado a producción con JWT, autorización basada en roles, PostgreSQL, Redis, Celery, tareas periódicas, OpenAPI y testing automatizado. |
-| 📊 **[PulseOps](https://github.com/Omar2709/pulseops)** | Trading backend en Go con modelado de dominio, matching por precio/FIFO, fills parciales, aritmética fixed-point, atomicidad en memoria y sincronización concurrente. |
+| ☁️ **[OrderFlow Serverless](https://github.com/Omar2709/orderflow-serverless)** | Arquitectura serverless con AWS Lambda, API Gateway y DynamoDB, aplicando repository abstractions, AWS SAM, IAM de mínimo privilegio, observabilidad estructurada e infraestructura como código. |
+| 👥 **[TeamFlow API](https://github.com/Omar2709/teamflow-api)** | Backend Django orientado a producción con JWT, RBAC, PostgreSQL, Redis, Celery, tareas periódicas, OpenAPI, health/readiness checks, hardening de producción y 225 tests automatizados. |
+| 📊 **[PulseOps](https://github.com/Omar2709/pulseops)** | Trading backend en Go con order book, matching por precio/FIFO, fills parciales, API HTTP, aritmética fixed-point, atomicidad en memoria y sincronización mediante `sync.RWMutex`. |
 
 > Cada repositorio contiene su propia documentación técnica, decisiones de diseño, pruebas automatizadas y evolución incremental.
 
@@ -90,7 +90,7 @@ Proyectos orientados a explorar y demostrar distintas áreas de **Backend Engine
 
 <br />
 
-**Python · Django · Django REST Framework · FastAPI · Go**
+**Python · Django · Django REST Framework · FastAPI · HTTPX · Go**
 
 ### Data & Async
 
@@ -150,11 +150,11 @@ Busco construir sistemas que sigan siendo entendibles no solamente cuando funcio
 
 ## 💼 Experiencia profesional
 
-### Backend Developer — Efficode
+### Backend Developer Semi-Senior — Efficode
 
 **Febrero 2022 — Octubre 2026**
 
-Trabajo principalmente dentro del ecosistema Python, participando en el ciclo completo de funcionalidades backend: **diseño, implementación, testing, despliegue y operación**.
+Trabajé principalmente dentro del ecosistema Python, participando en el ciclo completo de funcionalidades backend: **diseño, implementación, testing, despliegue y operación**.
 
 - Diseño y mantenimiento de APIs REST con **Django REST Framework y FastAPI**.
 - Implementación de autenticación, autorización, permisos y validaciones.
