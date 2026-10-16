@@ -21,11 +21,11 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="370.08613496462084" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="370.08613496462084" y="0" width="88.97680298733049" height="8" fill="#00ADD8"/>
-                    <rect mask="url(#languages-bar)" x="459.0629379519513" y="0" width="0.36479978690752574" height="8" fill="#336790"/>
-                    <rect mask="url(#languages-bar)" x="459.42773773885887" y="0" width="0.32674179387137164" height="8" fill="#7e858d"/>
-                    <rect mask="url(#languages-bar)" x="459.7544795327302" y="0" width="0.24552046726982327" height="8" fill="#384d54"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="349.37568520322975" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="349.37568520322975" y="0" width="109.73969182880563" height="8" fill="#00ADD8"/>
+                    <rect mask="url(#languages-bar)" x="459.1153770320354" y="0" width="0.3443851673205565" height="8" fill="#336790"/>
+                    <rect mask="url(#languages-bar)" x="459.4597621993559" y="0" width="0.30845694375785215" height="8" fill="#7e858d"/>
+                    <rect mask="url(#languages-bar)" x="459.76821914311375" y="0" width="0.23178085688622696" height="8" fill="#384d54"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -38,7 +38,7 @@
                             </div>
                             <small>
                                 <div>797 kB</div>
-                                <div>80.45%</div>
+                                <div>75.95%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -50,7 +50,7 @@
                             </div>
                             <small>
                                 <div>786 bytes</div>
-                                <div>0.08%</div>
+                                <div>0.07%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -75,8 +75,8 @@
                                 Go
                             </div>
                             <small>
-                                <div>191 kB</div>
-                                <div>19.34%</div>
+                                <div>250 kB</div>
+                                <div>23.86%</div>
                             </small>
                         </div>
                         <div class="field language details">
